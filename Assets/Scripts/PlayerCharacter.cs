@@ -11,7 +11,7 @@ namespace Amaze {
             }
             float hori = Input.GetAxis("Horizontal");
             float vert = Input.GetAxis("Vertical");
-            transform.position += Vector3.ClampMagnitude(new Vector3(hori, 0f, vert), 1f) * maxSpeed * Time.deltaTime;
+            transform.position += Vector3.ClampMagnitude(new Vector3(hori, 0f, vert), 1f) * maxSpeed * Time.deltaTime * 1.5f;
         }
     }
 }

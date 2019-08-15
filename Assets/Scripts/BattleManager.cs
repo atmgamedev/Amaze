@@ -2,7 +2,7 @@
 
 namespace Amaze {
     public class BattleManager : MonoBehaviour {
-
+        public GameObject obj;
         private void Awake() {
             if (!PhotonNetwork.connected) {
                 PhotonNetwork.offlineMode = true;
@@ -16,7 +16,7 @@ namespace Amaze {
         }
 
         private void Start() {
-            PhotonNetwork.Instantiate("PlayerCharacter", Vector3.zero, Quaternion.identity, 0);
+            obj = PhotonNetwork.Instantiate("PlayerCharacter", Vector3.zero, Quaternion.identity, 0);
         }
     }
 }

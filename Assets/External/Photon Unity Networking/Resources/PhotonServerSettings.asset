@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3758f8f58fdef43803eb9be1df0608, type: 3}
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
-  AppID: bc9db784-57b0-4100-aba9-3a06915b235a
+  AppID: 6d3caca1-bc31-4578-9a24-cfd6c0b27a8b
   VoiceAppID: 
-  ChatAppID: f521ac8e-a240-4c12-b133-0171323a1899
+  ChatAppID: 
   HostType: 2
   PreferredRegion: 0
   EnabledRegions: -1
@@ -29,6 +29,8 @@ MonoBehaviour:
   RunInBackground: 1
   RpcList:
   - Chat
+  - CheckList
+  - CmdAddPlayerToList
   - ColorRpc
   - DestroyRpc
   - DoJump
@@ -42,9 +44,6 @@ MonoBehaviour:
   - PunRespawn
   - RequestForPickupItems
   - RequestForPickupTimes
-  - TaggedPlayer
-  - CheckList
-  - CmdAddPlayerToList
   - RpcAddPlayerToList2
   - RpcClearList
   - sendChatMaster
@@ -53,4 +52,5 @@ MonoBehaviour:
   - SendMsgConnectionMaster
   - SendMsgDisconnectedMaster
   - SendMsgDisconnectionAll
+  - TaggedPlayer
   DisableAutoOpenWizard: 1
