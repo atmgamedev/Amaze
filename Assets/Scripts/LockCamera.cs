@@ -15,7 +15,7 @@ namespace Amaze
         }
 
         // Update is called once per frame
-        void Update()
+        void LateUpdate()
         {
             transform.position = bm.obj.transform.position + new Vector3(0, 300, 0);
         }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MazeBuilder : MonoBehaviour
 {
+    [SerializeField] private Transform cubeRoot;
+
     private int[] RandomPerm4()
     {
         int[] newList = { 0, 1, 2, 3};
@@ -73,7 +75,7 @@ public class MazeBuilder : MonoBehaviour
             for (int y = 0; y < 100; y++)
             {
                 GameObject toBuild = tileTypes[map[x, y]];
-                GameObject doneTile = Instantiate(toBuild, new Vector3(x - 50, 0f, y - 50), Quaternion.identity) as GameObject;
+                GameObject doneTile = Instantiate(toBuild, new Vector3(x - 50, 0f, y - 50), Quaternion.identity, cubeRoot);
             }
     }
 
